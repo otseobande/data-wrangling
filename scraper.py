@@ -1,9 +1,9 @@
 import argparse
 import logging
-from daily_price_scraper import get_daily_prices
-from weekly_price_scraper import get_weekly_prices
-from monthly_price_scraper import get_monthly_prices
-from annually_price_scraper import get_annually_prices
+from utils.daily_price_scraper import get_daily_prices
+from utils.weekly_price_scraper import get_weekly_prices
+from utils.monthly_price_scraper import get_monthly_prices
+from utils.annually_price_scraper import get_annually_prices
 
 if __name__ == "__main__":
     logging.basicConfig(format='%(asctime)s %(message)s', level=logging.INFO)
