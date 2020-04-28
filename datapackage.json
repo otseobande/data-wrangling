@@ -1,0 +1,101 @@
+{
+  "profile": "data-package",
+  "resources": [
+    {
+      "name": "daily-prices",
+      "path": "data/daily-prices.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "name": "Date",
+            "type": "date",
+            "format": "default",
+            "title": "Date"
+          },
+          {
+            "name": "Price",
+            "type": "number",
+            "format": "default",
+            "title": "Price as at date"
+          }
+        ]
+      }
+    },
+    {
+      "name": "monthly-prices",
+      "path": "data/monthly-prices.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "name": "Date",
+            "type": "date",
+            "format": "default",
+            "title": "Date"
+          },
+          {
+            "name": "Price",
+            "type": "number",
+            "format": "default",
+            "title": "Price as at date"
+          }
+        ]
+      }
+    },
+    {
+      "name": "weekly-prices",
+      "path": "data/weekly-prices.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "name": "Date",
+            "type": "date",
+            "format": "default",
+            "title": "Date",
+            "description": "Date"
+          },
+          {
+            "name": "Price",
+            "type": "number",
+            "format": "default",
+            "title": "Price as at date",
+            "description": "Price as at date"
+          }
+        ]
+      }
+    },
+    {
+      "name": "annually-prices",
+      "path": "data/annually-prices.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "name": "Date",
+            "type": "date",
+            "format": "default",
+            "title": "Date",
+            "description": "Date"
+          },
+          {
+            "name": "Price",
+            "type": "string",
+            "format": "default",
+            "title": "Price as at date"
+          }
+        ]
+      }
+    }
+  ],
+  "name": "henry-hub-gas-prices",
+  "title": "Henry Hub Gas Prices",
+  "description": "Henry Hub gas prices",
+  "contributors": [
+    {
+      "title": "Otse Obande",
+      "role": "author"
+    }
+  ]
+}
